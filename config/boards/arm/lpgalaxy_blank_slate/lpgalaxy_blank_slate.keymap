@@ -106,16 +106,16 @@
             >;
         };
 
- 	num_layer {
+	num_layer {
             label = "Num";
             bindings = <
 &trans    &kp EXCL    &kp AT    &kp POUND    &kp DLLR    &kp PRCNT    &kp CARET    &kp AMPS     &kp ASTRK      &kp LPAR       &kp RPAR     &trans
 &trans    &trans      &trans    &trans       &trans      &trans       &trans       &kp UNDER    &kp PLUS       &kp LBRC       &kp RBRC     &trans
-&trans    &trans      &trans    &trans       &trans      &trans       &trans       &trans       &trans         &kp HOME       &KP END       &kp PIPE
+&trans    &trans      &trans    &trans       &trans      &trans       &trans       &trans       &trans         &kp HOME       &kp END      &kp PIPE
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans          &trans          &trans          &trans
 #elif defined(TBLE_MIT)
-&trans  &trans       &trans     &trans      &trans           &none            &trans         &kp C_NEXT      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PLAY
+&trans  &trans       &trans     &trans              &trans           &trans            &trans         &kp C_NEXT      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PLAY
 #else
 &trans  &trans       &trans     &kp N0      &trans    &none         &none     &kp ESC        &kp DEL         &trans          &trans          &trans
 #endif
